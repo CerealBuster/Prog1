@@ -114,19 +114,21 @@ public class Auto
      * @return Wenn ein Valider Name gegeben wird, wird dieser zurueckgegeben ansonsten wird "___" und eine Fehlermeldung ausgegeben.
      */
     public String checkMarkenName(String marke){
-
+        //Name kuerzer als 3 Zeichen
         if (marke.length() < 3){
 
             marke = "___";
             System.out.println("ERROR: Markenname zu kurz. Er muss mindesten 3 Zeicen lang sein");
             return marke;
         }
+        //Name groesser als 10 Zeichen?
         else if (marke.length() > 10 ){
 
             marke = "___";
             System.out.println("ERROR: Markenname zu lang. Er darf hoechstens 10 Zeichen enthalten");
             return "___";
         }
+        //Alles ok
         else {
 
             return marke;
@@ -140,19 +142,21 @@ public class Auto
      * @return Wenn ein Valider Name gegeben wird, wird dieser zurueckgegeben ansonsten wird "___" und eine Fehlermeldung ausgegeben.
      */
     public String checkTypName(String typ){
-
+        //Name kuerzer als 3 zeichen?
         if (typ.length() < 3){
 
             typ = "___";
             System.out.println("ERROR: Typenname zu kurz. Er muss mindesten 3 Zeicen lang sein");
             return typ;
         }
+        //Name laenger als 10 zeichen?
         else if (typ.length() > 10 ){
 
             typ = "___";
             System.out.println("ERROR: Typenname zu lang. Er darf hoechstens 10 Zeichen enthalten");
             return "___";
         }
+        //Alles ok
         else {
 
             return typ;
@@ -161,21 +165,24 @@ public class Auto
 
     /**
      * Method checkHubraum
+     * Mit dieser Methode kann man den Hubraum des Autos festlegen
      *
      * @param hubraum Hubraum des Autos
      * @return Wenn ein Valider Name gegeben wird, wird dieser zurueckgegeben ansonsten wird "___" und eine Fehlermeldung ausgegeben.
      */
     public double checkHubraum(double hubraum){
-
+        //Hubraum kleiner 0.5?
         if(hubraum < 0.5){
 
             System.out.println("ERROR: Hubraum zu klein. Er muss mindestetns 0.5L betragen");
             return 0;
         }
+        //Hubraum groesser 8.0?
         else if(hubraum > 8.0 ){
             System.out.println("ERROR: Hubraum zu gross. Er darf nicht groesser als 8.0L betragen");
             return 0;
         }
+        //Alles ok
         else {
 
             return hubraum;
@@ -185,23 +192,28 @@ public class Auto
 
     /**
      * Method setLagerBestand
+     * Diese Methode ermoeglicht es den Lagerbestand zu veraendert. Bei erfolg wird eine Ausgabe auf die Konsole generiert.
+     * Bei Nichterfolg wird eine Fehelermeldung ausgegeben
      *
      * @param Neuer Lagerbestand. Sollte zwischen -10 und 10 betragen.
      */
     public void setLagerBestand (int neuerBestand){
         int alterBestand = this.lagerbestand;
-
+        //Neuer bestand kleiner -10?
         if (neuerBestand < -10){
             System.out.println("ERROR: Lagerbestand kann nicht um mehr als 10 reduziert werden");
         }
+        //Neuer Bestand Groesser 10?
         else if(neuerBestand >= 10){
             System.out.println("ERROR: Lagerbestand kann nicht um mehr als 10 erhoet werden");
 
         }
+        //Netto bestand negativ?
         else if (this.lagerbestand + neuerBestand < 0){
 
             System.out.println("ERROR: Bestand kann nicht negativ sein");
         }
+        //Drucke Den Lagerbestand aus mit altem und neuem Bestand.
         else {
 
             this.lagerbestand += neuerBestand;
