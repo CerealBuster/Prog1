@@ -39,7 +39,7 @@ System.out.println((int3 <= 3) && (double2 <= 2.999999));
 System.out.println((int3 < 3) || !(double2 <= 2.999999));
 System.out.println((int3 <= 3) && !(double2 <= 2.999999));
 System.out.println(boolean1 = 7 > 6);
-//System.out.println(int3 = int1 + int2 == 3);
+//System.out.println(int3 = int1 + int2 == 3); //inkompatible typen
 System.out.println((int3 = int2 - int1) == 1);
 System.out.println(3 * 1000000);
 System.out.println(3 * 10000000);

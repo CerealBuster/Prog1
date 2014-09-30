@@ -118,7 +118,7 @@ public class Auto
         if (marke.length() < 3){
 
             marke = "___";
-            System.out.println("ERROR: Markenname zu kurz. Er muss mindesten 3 Zeicen lang sein");
+            System.out.println("ERROR: Markenname zu kurz. Er muss mindesten 3 Zeichen lang sein");
             return marke;
         }
         //Name groesser als 10 Zeichen?
@@ -146,7 +146,7 @@ public class Auto
         if (typ.length() < 3){
 
             typ = "___";
-            System.out.println("ERROR: Typenname zu kurz. Er muss mindesten 3 Zeicen lang sein");
+            System.out.println("ERROR: Typenname zu kurz. Er muss mindesten 3 Zeichen lang sein");
             return typ;
         }
         //Name laenger als 10 zeichen?
@@ -204,7 +204,7 @@ public class Auto
             System.out.println("ERROR: Lagerbestand kann nicht um mehr als 10 reduziert werden");
         }
         //Neuer Bestand Groesser 10?
-        else if(neuerBestand >= 10){
+        else if(neuerBestand >10){
             System.out.println("ERROR: Lagerbestand kann nicht um mehr als 10 erhoet werden");
 
         }
