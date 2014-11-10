@@ -58,7 +58,10 @@ public enum Befehlswort {
 		String gueltigeBefehle = "";
 		Befehlswort[] werte = Befehlswort.values();
 		for (Befehlswort item : werte){
-			gueltigeBefehle += item + " ";
+			if(item != UNBEKANNT){
+				gueltigeBefehle += item + " ";
+			}
+			
 			
 		}
 		return gueltigeBefehle;
