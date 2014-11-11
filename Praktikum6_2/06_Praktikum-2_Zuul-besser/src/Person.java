@@ -43,4 +43,33 @@ public class Person {
 	public String gibName() {
 		return name;
 	}
+	/**
+	 * 
+	 * @param gegenstand
+	 * @return true wenn Person den Gegenstand aufnehmen kann.
+	 */
+	public boolean kannTragen(Gegenstand gegenstand) {
+		if(this.tragkraft >= berechneGewicht() + gegenstand.gibGewicht()){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	/**
+	 * Berechnet das Gewicht der Gegenstaende im Rucksack der Person
+	 * @param rucksack Die Liste mit Gegenstaenden
+	 * @return Das Gewicht der Gegenstaende
+	 */
+	private int berechneGewicht() {
+		int gewicht = 0;
+		for(Gegenstand gegenstand : this.rucksack) {
+			gewicht += gegenstand.gibGewicht();
+		}
+		return gewicht;
+	}
+	
+	public void add(Gegenstand gegenstand) {
+		this.rucksack.add(gegenstand);
+	}
 }
