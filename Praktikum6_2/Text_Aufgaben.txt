@@ -1,0 +1,7 @@
+Aufgabe 2
+
+a) Wo und wie wird das Datenfeld gueltigeBefehle initialisiert und mit Werten abgefüllt?
+Es wird am Anfang der Klasse ein statisches, finales HashSet vom Typ String angelegt mit den Werten: „gehen“, “beenden“ und „hilfe"
+
+b) Zu welchem Zeitpunkt (zur Kompilierzeit, bei Programmstart, jeweils bei der Erzeugung eines Objektes,...?) erfolgt die Befüllung?
+Die Befüllung befolgt nur bei der ersten Erzeugung des Objekts Befehlswort.
