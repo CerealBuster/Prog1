@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 INDEX VERSION 1.127+/Users/maxnadig/GitHub/Prog1/.metadata/.plugins/org.eclipse.jdt.core
 2652116723.index
+=======
+INDEX VERSION 1.127+C:\Users\Raffael\Documents\GitHub\Prog1\.metadata\.plugins\org.eclipse.jdt.core
+495309318.index
+>>>>>>> FETCH_HEAD
