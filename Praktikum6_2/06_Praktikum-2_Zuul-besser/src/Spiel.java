@@ -168,7 +168,7 @@ public class Spiel {
 		boolean moechteBeenden = false;
 
 		String befehlswort = befehl.gibBefehlswort();
-		
+		//gross geändert haben wir nichts
 		switch (Befehlswort.gibBefehlswort(befehlswort)) {
 		case UNBEKANNT:
 			System.out.println("Ich weiss nicht, was Sie meinen...");

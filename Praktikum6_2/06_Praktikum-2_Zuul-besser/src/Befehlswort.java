@@ -3,30 +3,45 @@
  * Diese Klasse haelt eine Aufzaehlung der akzeptierten Befehlswoerter.
  * Mit ihrer Hilfe werden eingetippte Befehle erkannt.
  *
- * @author  tebe
- * @version 1.0
+ * @author  Raffael
+ * @version 2.0
  */
 
 
 
+/**
+ * @author Raffael
+ *
+ */
+/**
+ * @author Raffael
+ *
+ */
 public enum Befehlswort {
-
-	UNBEKANNT("?") ,GEHE("gehe"), HILFE("hilfe"), BEENDEN("beenden"), UMSEHEN("umsehen"), UEBERNIMM("uebernimm"), NIMM("nimm");
+	//Enum Konstanten
+	UNBEKANNT("?") ,GEHE("gehe"), HILFE("hilfe"), BEENDEN("beenden"), 
+	UMSEHEN("umsehen"), UEBERNIMM("uebernimm"), NIMM("nimm");
 	
 	private String befehl;
 
-	public  String getBefehl() {
-		return befehl;
-	}
+
 	/**
-	 * Konstruktor - initialisiere die Befehlswörter.
+	 * Konstruktor - initialisiere die Befehlswoerter
 	 */
 	private Befehlswort(String befehl)
 	{
-		// tut momentan nichts
+		
 		this.befehl = befehl;
 	}
+	
+	
+	/**
+	 * Diese Methode gibt das Befehlswort zurueckt
+	 * @param wort
+	 * @return befehlswort Befehlswort
+	 */
 	public static Befehlswort gibBefehlswort(String wort){
+		
 		try {
 			return valueOf(wort.toUpperCase());
 		} catch (Exception e) {
@@ -54,15 +69,29 @@ public enum Befehlswort {
 	  
 
 
+	/**
+	 * Diese Methode gibt die gueltigen Befehlswoerter als Text zurueck
+	 * @return String mit den gueltigen Befehlswoertern
+	 */
 	public static String gibBefehlsworteAlsText(){
 		String gueltigeBefehle = "";
 		Befehlswort[] werte = Befehlswort.values();
 		for (Befehlswort item : werte){
 			if(item != UNBEKANNT){
-			  gueltigeBefehle += item + " ";
+				gueltigeBefehle += item + " ";
 			}
+			
 			
 		}
 		return gueltigeBefehle;
-	}	
+	}
+	
+	
+	/**
+	 * Diese Methode gibt das Befehlswort zurueck
+	 * @return befehlswort String
+	 */
+	public  String getBefehl() {
+		return befehl;
+	}
 }
