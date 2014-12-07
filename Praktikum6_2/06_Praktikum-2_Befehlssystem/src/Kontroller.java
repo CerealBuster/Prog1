@@ -20,9 +20,10 @@ public class Kontroller {
 	public boolean verarbeiteBefehl(Befehl befehl) {
 		boolean macheWeiter = true;
 		String befehlswort = befehl.gibBefehlswort();
+		//wir schauen ob es diesen befhel ueberhaupt schon gibt
 		if (Befehlswort.gibBefehlswort(befehlswort) != Befehlswort.UNBEKANNT) {
 			
-
+			// nun lesen wir den Wert aus ignorecase damitt gorss und keleinschreibung egal wird
 			if (befehlswort.equalsIgnoreCase(Befehlswort.GEHE.getBefehl())) {
 				System.out.println("Befehl GEHE " + befehl.gibZweitesWort() + " wird ausgefuehrt");
 			} else if (befehlswort.equalsIgnoreCase(Befehlswort.HILFE.getBefehl())){
