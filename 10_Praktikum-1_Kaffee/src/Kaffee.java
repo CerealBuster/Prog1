@@ -2,32 +2,38 @@
  * Diese Klasse bietet die Funktionalitaet, um einen Kaffee
  * zu kochen.
  * 
- * @author tebe
+ * @author tebe, Raffael
+ * @version 1.0
  */
 public class Kaffee extends KoffeinGetraenk {
 
+	
+	
+	
+	@Override
 	public void braue(){
 		  
 		System.out.println("Braue Filterkafee");
 		  
 	}
 	
+	@Override
 	public void fuegeZutatenHinzu() {
-		// TODO Auto-generated method stub
+		
 		System.out.println("Füge Milch und Zucker hinzu");
 		
 	}
 
 	@Override
 	public void trinke() {
-		// TODO Auto-generated method stub
+		
 		System.out.println("Ich Trinke einen " + getClass().getSimpleName());
 	}
 
 	/**
    * Bereitet einen Kaffee zu.
    */
-/*Aukommentiert fuer Aufgabe 4
+/*Auskommentiert fuer Aufgabe 4
   public void bereiteZu() {
     kocheWasser();
     braueFilterKaffee();
@@ -44,13 +50,13 @@ public class Kaffee extends KoffeinGetraenk {
 
 //Audkommentiert fuer Aufgabe 3
 /*private void giesseInTasse() {
-	// TODO Auto-generated method stub
+	
 	System.out.println("giesse Kaffee in die Tasse");
 	
 }*/
 /* auskommetniert fuer aufgabe 4
 private void braueFilterKaffee() {
-	// TODO Auto-generated method stub
+	
 	System.out.println("Braue Filterkafee");
 	
 }*/

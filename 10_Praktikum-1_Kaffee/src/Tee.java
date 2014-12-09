@@ -17,35 +17,39 @@ public class Tee extends KoffeinGetraenk {
     fuegeZitroneHinzu();
   }*/
 
-  private void fuegeZitroneHinzu() {
-	// TODO Auto-generated method stub
-	System.out.println("füge die Zitrone hinzu");
-}
-  public void braue(){
+	/**
+	 *Diese Methode fuegt dem Tee eine Zitrone hinzu 
+	 */
+	private void fuegeZitroneHinzu() {
+	
+		System.out.println("füge die Zitrone hinzu");
+	}
+	public void braue(){
 	  
 	  
 	  System.out.println("Tauche Teebeutel ins Wasser");
-  }
+	}
   
-  public void fuegeZutatenHinzu() {
-  	// TODO Auto-generated method stub
+	@Override
+  	public void fuegeZutatenHinzu() {
+  	
 	  System.out.println("füge die Zitrone hinzu");
-  }
-@Override
-public void trinke() {
-	// TODO Auto-generated method stub
-	System.out.println("Ich Trinke einen " + getClass().getSimpleName());	
-}
+	}
+	@Override
+	public void trinke() {
+	
+		System.out.println("Ich Trinke einen " + getClass().getSimpleName());	
+	}
 
  //Auskommentiert fuer Aufgabe 3
 /*private void giesseInTasse() {
-	// TODO Auto-generated method stub
+	
 	System.out.println("giesse Wasser in die Tasse");
 }*/
 
 /* Auskommentiert fuer Aufabe 4
   private void taucheTeebeutel() {
-	// TODO Auto-generated method stub
+	
 	System.out.println("Teabaging");
 }*/
 //Auskommentiert fuer aufgabe 3
