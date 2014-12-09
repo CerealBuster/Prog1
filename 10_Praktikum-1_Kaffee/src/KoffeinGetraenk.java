@@ -6,6 +6,9 @@
 public abstract class KoffeinGetraenk implements Trinkbar {
 	
 	
+	/**
+	 * Mit dieser Methode wird das Getraenk zubreited 
+	 */
 	public final void bereiteZu() {
 		kocheWasser();
 		braue();

@@ -10,6 +10,9 @@
  */
 public abstract class Pflanzenoel implements Trinkbar{
 
+	/**
+	 * Mit dieser Methode wird das Getraenk zubereited 
+	 */
 	public final void bereiteZu() {
 		oeffneFlasche();
 		braue();
